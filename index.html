@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Okuma Takip</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>📚 Okuma Takip</h1>
+</header>
+
+<div class="container">
+
+<section class="card">
+
+<h2>Bugün Ne Okudun?</h2>
+
+<input id="bookName" placeholder="Kitap adı">
+
+<input id="pages" type="number" placeholder="Okunan sayfa">
+
+<button onclick="addReading()">Kaydet</button>
+
+</section>
+
+
+<section class="card">
+
+<h2>Hedefler</h2>
+
+<input id="dailyGoal" placeholder="Günlük hedef">
+
+<input id="monthlyGoal" placeholder="Aylık hedef">
+
+<button onclick="saveGoals()">Kaydet</button>
+
+</section>
+
+
+<section class="card">
+
+<h2>İlerleme</h2>
+
+<canvas id="chart"></canvas>
+
+<div id="totalPages"></div>
+
+</section>
+
+
+<section class="card">
+
+<h2>📚 Kitaplık</h2>
+
+<div id="library"></div>
+
+</section>
+
+
+<section class="card">
+
+<h2>🏆 Rozetler</h2>
+
+<div id="badges"></div>
+
+</section>
+
+
+<section class="card">
+
+<h2>Kayıtlar</h2>
+
+<div id="history"></div>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
